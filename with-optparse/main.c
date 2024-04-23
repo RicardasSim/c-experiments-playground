@@ -128,7 +128,7 @@ bool ParseOptions( int argc, char **argv )
                     }
                     else
                     {
-                        printf("ERROR: invelid device number, must be greater than 0\n");
+                        printf("ERROR: invalid device number, must be greater than 0\n");
                         return false;
                     }
 
