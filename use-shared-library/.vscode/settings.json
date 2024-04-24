@@ -3,9 +3,6 @@
         "**/*.o": true,
         "**/testprog": true,
     },
-    "editor.fontSize": 16,
-    "cmake.configureOnOpen": false,
-    "files.associations": {
-        "dlfcn.h": "c"
-    }
+    "editor.fontSize": 16
 }
+
