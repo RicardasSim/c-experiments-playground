@@ -1,0 +1,1 @@
+# c centroid of triangle
