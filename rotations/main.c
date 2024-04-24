@@ -122,7 +122,7 @@ int main()
     test_vec.y = 1.0f;
     test_vec.z = 0.0f;
 
-    puts("Left coordinate system rotations.");
+    puts("Left handed coordinate system rotations.");
 
     printf("x: %f y: %f z: %f\n", test_vec.x, test_vec.y, test_vec.z );
 
@@ -144,7 +144,7 @@ int main()
     test_vec.y = 1.0f;
     test_vec.z = 0.0f;
 
-    puts("Right coordinate system rotations.");
+    puts("Right handed coordinate system rotations.");
 
     printf("x: %f y: %f z: %f\n", test_vec.x, test_vec.y, test_vec.z );
 
