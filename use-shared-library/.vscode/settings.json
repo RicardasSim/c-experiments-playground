@@ -2,7 +2,7 @@
     "files.exclude": {
         "**/*.o": true,
         "**/testprog": true,
+        "**/libTestprogShared.so": true
     },
     "editor.fontSize": 16
 }
-
