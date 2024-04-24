@@ -1,1 +1,1 @@
-# c hello
+# c area of triangle
