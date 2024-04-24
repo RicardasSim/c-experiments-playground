@@ -1,1 +1,1 @@
-# c load library
+# c use shared library
