@@ -59,7 +59,6 @@ int main ()
     MYSQL_ROW row;
     unsigned int num_fields;
     unsigned int num_rows;
-    unsigned int i;
 
     if( !mysql_init( &mysql ) )
     {
@@ -120,7 +119,7 @@ int main ()
 
             lengths = mysql_fetch_lengths( result );
 
-            for( i = 0; i < num_fields; i++ )
+            for( unsigned int i = 0; i < num_fields; i++ )
             {
                 printf("[%.*s]", (int) lengths[i], row[i] ? row[i] : "NULL" );
             }
