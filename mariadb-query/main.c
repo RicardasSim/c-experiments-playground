@@ -51,15 +51,15 @@
 #define USER_NAME "testuser"
 #define USER_PASSWORD "pass123"
 
-MYSQL mysql;
-MYSQL_RES *result;
-MYSQL_ROW row;
-unsigned int num_fields;
-unsigned int num_rows;
-unsigned int i;
-
 int main ()
 {
+
+    MYSQL mysql;
+    MYSQL_RES *result;
+    MYSQL_ROW row;
+    unsigned int num_fields;
+    unsigned int num_rows;
+    unsigned int i;
 
     if( !mysql_init( &mysql ) )
     {
