@@ -1,0 +1,13 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "/usr/include/mariadb",
+                "/usr/include/mariadb/mysql"
+            ]
+        }
+    ],
+    "version": 4
+}
