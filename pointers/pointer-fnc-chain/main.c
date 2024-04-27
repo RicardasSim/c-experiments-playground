@@ -29,7 +29,7 @@ bool Fnc2( int **p_buff, int *p_val, unsigned int num )
     if ( !Fnc3( p_buff, p_val, num ) )
     {
         printf("ERROR: Fnc3 failed.\n");
-        return 1;
+        return false;
     }
 
     *p_val += 1;
@@ -43,7 +43,7 @@ bool Fnc1( int **p_buff, int *p_val, unsigned int num )
     if ( !Fnc2( p_buff, p_val, num ) )
     {
         printf("ERROR: Fnc2 failed.\n");
-        return 1;
+        return false;
     }
 
     *p_val += 1;
