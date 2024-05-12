@@ -1,0 +1,8 @@
+{
+    "files.exclude": {
+        "**/*.o": true,
+        "**/testprog": true,
+        "**/__pycache__": true
+    },
+    "editor.fontSize": 16
+}
