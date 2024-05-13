@@ -5,6 +5,17 @@
 
 // TODO: int buffer
 
+void FillBufferWithOnes( char *p_buff,
+                         size_t n )
+{
+
+    for ( unsigned int i = 0; i < n; ++i )
+    {
+        p_buff[i] = 1;
+    }
+
+}
+
 void TestBuffer( char *p_buff,
                  size_t n )
 {
@@ -51,7 +62,7 @@ int main()
 
     printf("(1)\n");
 
-    char* buffer = calloc( current_size, sizeof(char) );
+    char *buffer = calloc( current_size, sizeof(char) );
 
     if ( !buffer )
     {
@@ -64,6 +75,9 @@ int main()
     /************************************************************/
 
     printf("(2)\n");
+
+    FillBufferWithOnes( buffer, current_size );
+    TestBuffer( buffer, current_size );
 
     if ( !ExpandBufferZeroFillExpanded( &buffer,
                                         &current_size,
@@ -79,6 +93,9 @@ int main()
     /************************************************************/
 
     printf("(3)\n");
+
+    FillBufferWithOnes( buffer, current_size );
+    TestBuffer( buffer, current_size );
 
     if ( !ExpandBufferZeroFillExpanded( &buffer,
                                         &current_size,
