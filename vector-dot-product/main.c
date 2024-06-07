@@ -91,5 +91,7 @@ int main()
     printf("vec b: x: %f y: %f z: %f\n", b[0], b[1], b[2] );
     printf("Dot Product: %f\n", product );
 
+    putchar('\n');
+
     return 0;
 }
