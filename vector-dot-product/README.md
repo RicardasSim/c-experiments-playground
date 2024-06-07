@@ -1,1 +1,1 @@
-# c vector cross product
+# c vector dot product
