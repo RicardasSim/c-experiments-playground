@@ -30,7 +30,7 @@ int main()
 
     putchar('\n');
 
-    St st_arr[5];
+    St st_arr[6];
 
     st_arr[0] = ( struct st ){ "Stairway", "Zeppelin", NULL, 1, 0.1 };
     st_arr[1] = ( St ){ "Rain", "Roses", NULL, 1, 0.1 };
@@ -46,12 +46,22 @@ int main()
     st_arr[3] = ( St ){ .p_str = NULL, .str_1 = "Yell", .str_2 = "Idol" };
     st_arr[4] = ( St ){ .p_str = NULL, .str_2 = "Forever", .str_1 = "Queen", .d_v = 321.1 };
 
+    //------------------------------
+
+    st_arr[5] = ( St ){ .i_v = 123 , .d_v = 321.1 };
+
+    char test_str_1[] = "Camouflage";
+    char test_str_2[] = "Shield";
+
+    memcpy( st_arr[5].str_1, test_str_1, sizeof test_str_1 );
+    st_arr[5].p_str = test_str_2;
+
     for ( unsigned int i = 0; i < sizeof st_arr / sizeof *st_arr ; ++i )
     {
-        printf("%s %s %p %d %f\n",
+        printf("%s %s %s %d %f\n",
                 st_arr[i].str_1,
                 st_arr[i].str_2,
-                (void*) st_arr[i].p_str,
+                st_arr[i].p_str,
                 st_arr[i].i_v,
                 st_arr[i].d_v );
     }
