@@ -53,7 +53,11 @@ int main()
     char test_str_1[] = "Camouflage";
     char test_str_2[] = "Shield";
 
-    memcpy( st_arr[5].str_1, test_str_1, sizeof test_str_1 );
+    size_t len = sizeof test_str_1;
+
+    memcpy( st_arr[5].str_1, test_str_1, len );
+    st_arr[5].str_1[len] = '\0';
+
     st_arr[5].p_str = test_str_2;
 
     for ( unsigned int i = 0; i < sizeof st_arr / sizeof *st_arr ; ++i )
