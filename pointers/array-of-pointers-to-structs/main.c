@@ -38,6 +38,8 @@ int main()
                 free( p_arr[ j - 1 ] );
             }
 
+            free( p_arr );
+
             exit(EXIT_FAILURE);
 
         }
