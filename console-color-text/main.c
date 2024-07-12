@@ -11,6 +11,14 @@ Blue: \x1b[34m
 Magenta:\x1b[35m
 Cyan: \x1b[36m
 White: \x1b[37m
+Bright Red: \x1b[91m
+Bright Green: \x1b[92m
+Bright Yellow: \x1b[93m
+Bright Blue: \x1b[94m
+Bright Magenta:\x1b[95m
+Bright Cyan: \x1b[96m
+Bright White: \x1b[97m
+
 
 Background Colors:
 -------------------
