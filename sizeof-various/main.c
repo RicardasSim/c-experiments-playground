@@ -151,5 +151,41 @@ int main()
 
     }
 
+    {
+        char arr_c[100];
+
+        printf("sizeof arr_c: %zu\n", sizeof arr_c );
+        printf("sizeof *arr_c: %zu\n", sizeof *arr_c );
+        printf("sizeof arr_c[0]: %zu\n", sizeof arr_c[0] );
+        printf("arr_c num. of elem.: %zu\n", sizeof arr_c / sizeof *arr_c );
+    }
+
+    {
+        int arr_i[100];
+
+        printf("sizeof arr_i: %zu\n", sizeof arr_i );
+        printf("sizeof *arr_i: %zu\n", sizeof *arr_i );
+        printf("sizeof arr_i[0]: %zu\n", sizeof arr_i[0] );
+        printf("arr_i num. of elem.: %zu\n", sizeof arr_i / sizeof *arr_i );
+    }
+
+    {
+        float arr_f[100];
+
+        printf("sizeof arr_f: %zu\n", sizeof arr_f );
+        printf("sizeof *arr_f: %zu\n", sizeof *arr_f );
+        printf("sizeof arr_f[0]: %zu\n", sizeof arr_f[0] );
+        printf("arr_f num. of elem.: %zu\n", sizeof arr_f / sizeof *arr_f );
+    }
+
+    {
+        double arr_d[100];
+
+        printf("sizeof arr_d: %zu\n", sizeof arr_d );
+        printf("sizeof *arr_d: %zu\n", sizeof *arr_d );
+        printf("sizeof arr_d[0]: %zu\n", sizeof arr_d[0] );
+        printf("arr_d num. of elem.: %zu\n", sizeof arr_d / sizeof *arr_d );
+    }
+
     return 0;
 }
