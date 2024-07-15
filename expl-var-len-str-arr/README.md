@@ -1,4 +1,4 @@
-# exploring an array of pointers to variable length strings
+# exploring an array of pointers to various length strings
 
 Example console output:
 
