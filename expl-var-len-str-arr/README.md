@@ -14,4 +14,4 @@ all adjacent to each others. But they may point at vastly different locations.
 It is not guaranteed that strings, pointed by those pointers, will be adjacent  
 to each other in memory. It depends on compiler.
 
-Big thank to  #C channel on Libera.Chat
+Big Thank to  #C channel on Libera.Chat
