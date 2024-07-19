@@ -1,0 +1,12 @@
+{
+    "files.exclude": {
+        "**/*.o": true,
+        "**/testprog": true,
+    },
+    "editor.fontSize": 16,
+    "files.associations": {
+        "*.c": "c",
+        "sstream": "c"
+    }
+}
+
