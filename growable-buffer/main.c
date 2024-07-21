@@ -101,7 +101,7 @@ bool AddStrToBuffer ( StBuff *p_sb, const char *p_str )
     }
 
     // without null terminating char
-    strncpy( p_sb->p_buffer + p_sb->size ,p_str , len );
+    memcpy( p_sb->p_buffer + p_sb->size ,p_str , len );
 
     p_sb->size = new_size;
 
