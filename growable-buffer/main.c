@@ -52,9 +52,9 @@ bool GrowBuffer( StBuff *p_sb, size_t size_to_grow )
     p_sb->p_buffer = p_tmp;
 
     // zero out the newly allocated part
-    memset( p_sb->p_buffer + p_sb->capacity,
+    memset( p_sb->p_buffer + p_sb->capacity * sizeof *p_sb->p_buffer,
             0,
-            new_capacity - p_sb->capacity );
+            new_capacity - p_sb->capacity * sizeof *p_sb->p_buffer );
 
     p_sb->capacity = new_capacity;
 
