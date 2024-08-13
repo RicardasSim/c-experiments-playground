@@ -1,5 +1,5 @@
 CC = gcc
-CFLAGS = -Wall -Wextra -Wpedantic -Wshadow
+CFLAGS = -Wall -Wextra -Wpedantic -Wshadow -Wconversion
 DEBUG_FLAGS   = -O0 -DDEBUG -g
 RELEASE_FLAGS = -O3 -DNDEBUG
 OBJ = main.o
