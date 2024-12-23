@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-#define MUM_OF_ST 10
+#define NUM_OF_ST 10
 
 typedef struct
 {
@@ -33,7 +33,7 @@ int main()
 {
 
 
-    St *s_arr = malloc( MUM_OF_ST * sizeof *s_arr );
+    St *s_arr = malloc( NUM_OF_ST * sizeof *s_arr );
 
     if ( !s_arr )
     {
@@ -68,7 +68,7 @@ int main()
     char str_3[] = "Constellation";
     char str_4[] = "Cassiopeia";
 
-    St_p *s_arr_2 = calloc( MUM_OF_ST, sizeof *s_arr_2 );
+    St_p *s_arr_2 = calloc( NUM_OF_ST, sizeof *s_arr_2 );
 
     if ( !s_arr_2 )
     {
@@ -89,7 +89,7 @@ int main()
     if ( !s_arr_2[0].p_1 )
     {
         printf("Error: cannot allocate memory (1).\n");
-        Cleanup( s_arr_2, MUM_OF_ST );
+        Cleanup( s_arr_2, NUM_OF_ST );
         exit(EXIT_FAILURE);
     }
 
@@ -102,7 +102,7 @@ int main()
     if ( !s_arr_2[0].p_2 )
     {
         printf("Error: cannot allocate memory (2).\n");
-        Cleanup( s_arr_2, MUM_OF_ST );
+        Cleanup( s_arr_2, NUM_OF_ST );
         exit(EXIT_FAILURE);
     }
 
@@ -115,7 +115,7 @@ int main()
     if ( !s_arr_2[1].p_1 )
     {
         printf("Error: cannot allocate memory (3).\n");
-        Cleanup( s_arr_2, MUM_OF_ST );
+        Cleanup( s_arr_2, NUM_OF_ST );
         exit(EXIT_FAILURE);
     }
 
@@ -128,7 +128,7 @@ int main()
     if ( !s_arr_2[1].p_2 )
     {
         printf("Error: cannot allocate memory (4).\n");
-        Cleanup( s_arr_2, MUM_OF_ST );
+        Cleanup( s_arr_2, NUM_OF_ST );
         exit(EXIT_FAILURE);
     }
 
@@ -139,7 +139,7 @@ int main()
     printf("%s %s\n", s_arr_2[0].p_1, s_arr_2[0].p_2 );
     printf("%s %s\n", s_arr_2[1].p_1, s_arr_2[1].p_2 );
 
-    Cleanup( s_arr_2, MUM_OF_ST );
+    Cleanup( s_arr_2, NUM_OF_ST );
 
     exit(EXIT_SUCCESS);
 }
