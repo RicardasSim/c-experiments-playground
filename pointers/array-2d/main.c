@@ -61,7 +61,7 @@ int main()
             printf("%d ", p_mtrx[i][j] );
         }
         
-    printf("\n");
+        printf("\n");
     }
 
     // Free all allocated memory
